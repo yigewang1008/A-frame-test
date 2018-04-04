@@ -3,13 +3,29 @@
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   </head>
   <body>
+    <a-assets>
+    <img id="ground" src="https://i.pinimg.com/originals/36/e0/83/36e0833e2f567116964f758dab502337.jpg">
+    </a-assets>
+    
     <a-scene>
       
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-gltf-model src="https://yigewang1008.github.io/A-frame-test/Assets/greek_island_-_medievalfantasyscene/scene.gltf"></a-gltf-model>
       
+      <a-entity light="type: ambient; color: #ffffff" intensity: 3></a-entity>
+      <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="-1 1 0"></a-entity>
+      
+
+      <a-sky color="#e5f1ff"></a-sky>
+      
+      
+      
+      <a-gltf-model src="https://yigewang1008.github.io/A-frame-test/Assets/mega_scene/scene.gltf" scale="5 5 5" position="0 -5 0"></a-gltf-model>
+      
+      <a-gltf-model src="https://yigewang1008.github.io/A-frame-test/Assets/shenron_-_dragon_ball/scene.gltf" scale="0.1 0.1 0.1" position="0 -1 -3"></a-gltf-model>
+      <a-gltf-model src="https://yigewang1008.github.io/A-frame-test/Assets/griffin_animated/scene.gltf" scale="0.5 0.5 0.5" position="0 4 -4"></a-gltf-model>
+      
+      <a-camera>
+      <a-cursor></a-cursor>
+      </a-camera>
     </a-scene>
   </body>
 </html>
-
